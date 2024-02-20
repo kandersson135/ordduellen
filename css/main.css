@@ -1,0 +1,328 @@
+/* importing web fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("../img/bg.png"), linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+  font-family: 'Space Mono', monospace;
+}
+
+#setup-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#setup-container h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Monoton', sans-serif;
+  font-size: 48px;
+  margin-bottom: 50px;
+  text-shadow: 1px 1px 0px rgba(100, 100, 100, 0.1), 2px 2px 0px rgba(100, 100, 100, 0.1), 3px 3px 0px rgba(100, 100, 100, 0.1), 4px 4px 0px rgba(100, 100, 100, 0.1);
+}
+
+#setup-container h2 {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 0px rgba(100, 100, 100, 0.2);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#setup-container input[type="text"] {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0px rgba(100, 100, 100, 0.2);
+  color: #777;
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 15px 12px;
+  width: 250px;
+  transition: .1s ease-in-out;
+}
+
+#setup-container input[type="text"]:focus {
+  border: none;
+  outline: none;
+
+  padding: 17px 12px;
+}
+
+#start-game-btn {
+  background-color: rgba(76, 175, 80, 0.8);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0px rgba(100, 100, 100, 0.2);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Space Mono', monospace;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  transition-duration: 0.3s;
+  width: 275px;
+}
+
+#start-game-btn:hover {
+  background-color: rgba(76, 175, 80, 1);
+}
+
+#how-to-play {
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  font-weight: 300;
+  margin-top: 20px;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.6);
+}
+
+/* menu */
+#menu {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#menu li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+#menu li a {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  text-decoration: none;
+}
+
+/* game-container */
+#game-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.timer {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  margin-bottom: 80px;
+  text-shadow: 1px 1px 0px rgba(100, 100, 100, 0.2);
+}
+
+#category {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 0px rgba(100, 100, 100, 0.2);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#word-display {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 0px rgba(100, 100, 100, 0.2);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#turn-arrow {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 0px rgba(100, 100, 100, 0.2);
+  font-size: 56px;
+  font-weight: 700;
+}
+
+#word-input {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0px rgba(100, 100, 100, 0.2);
+  color: #777;
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 15px 12px;
+  width: 400px;
+}
+
+#word-input:focus {
+  border: none;
+  outline: none;
+}
+
+#submit-word-btn {
+  padding: 15px 20px;
+  font-size: 16px;
+  background-color: rgba(76, 175, 80, 0.8);
+  box-shadow: 3px 3px 0px rgba(100, 100, 100, 0.2);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Space Mono', monospace;
+  width: 275px;
+}
+
+#submit-word-btn:hover {
+  background-color: rgba(76, 175, 80, 1);
+}
+
+#submit-word-btn:active {
+  box-shadow: none;
+  position: relative;
+  top: 3px;
+  left: 3px;
+}
+
+#message {
+  color: rgba(50, 50, 50, 0.6);
+  display: block;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 10px 5px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  width: 250px;
+}
+
+.speech-bubble {
+	position: relative;
+	background: rgba(255, 255, 255, 0.8);
+	border-radius: .4em;
+  box-shadow: 3px 3px 0px rgba(100, 100, 100, 0.2);
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: rgba(255, 255, 255, 0.8);
+	border-bottom: 0;
+	border-right: 0;
+  box-shadow: 3px 0px 0px rgba(100, 100, 100, 0.2);
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+
+#scoreboard {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#player1-score {
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  left: 10px;
+  position: absolute;
+  text-shadow: 1px 1px 0px rgba(100, 100, 100, 0.2);
+  top: 10px;
+}
+
+#player2-score {
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  right: 10px;
+  position: absolute;
+  text-shadow: 1px 1px 0px rgba(100, 100, 100, 0.2);
+  top: 10px;
+}
+
+#player1-words,
+#player2-words {
+  color: rgba(255, 255, 255, 0.8);
+  list-style-type: none;
+  position: absolute;
+  text-shadow: 1px 1px 0px rgba(100, 100, 100, 0.2);
+  top: 30px;
+  width: 200px;
+  text-align: left;
+}
+
+#player1-words {
+  left: -20px;
+}
+
+#player2-words {
+  right: 20px;
+  text-align: right
+}
+
+/* progress bars */
+.progress-bar {
+  width: 200px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 2px 0px rgba(100, 100, 100, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  background-color: rgba(76, 175, 80, 0.6);
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 100%;
+  transition: .4s ease-in-out;
+}
+
+.stripes span {
+	animation: animate-stripes 3s linear infinite;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, .1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, .1) 75%,  transparent 75%, transparent);
+}
+
+@keyframes animate-stripes {
+    0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
+
+#progress-player1 {
+  left: 10px;
+  position: absolute;
+  top: 25px;
+}
+
+#progress-player2 {
+  right: 10px;
+  position: absolute;
+  top: 25px;
+}
+
+#version-info {
+  bottom: 0px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 8px;
+  position: absolute;
+}
+
+/* responsive design for mobile */
+@media (max-width: 768px) {
+  #setup-container h1 {
+    font-size: 36px;
+  }
+
+  .progress-bar {
+    width: 150px;
+  }
+
+  #player1-words,
+  #player2-words {
+    display: none;
+  }
+}

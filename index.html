@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="theme-color" content="#f78ca0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <link rel="apple-touch-icon" href="img/webapp-icon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <title>Ordduellen</title>
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <div id="setup-container">
+    <h1>ORDDUELLEN</h1>
+    <h2>Ange spelarnamn:</h2>
+    <input type="text" id="player1-name" placeholder="Spelare 1">
+    <input type="text" id="player2-name" placeholder="Spelare 2">
+    <button id="start-game-btn">Starta spel</button>
+
+    <ul id="menu">
+      <li><a href="#" id="how-to-btn">Hur du spelar</a></li>
+      <li><a href="#" id="credits-btn">Om spelet</a></li>
+    </ul><!-- end menu -->
+  </div><!-- end setup-container -->
+
+  <div id="game-container" style="display:none;">
+    <div class="timer">Tid: <span id="countdown">5:00</span></div>
+    <div id="category">Kategori: <span></span></div>
+    <div id="word-display"></div>
+    <input type="text" id="word-input" placeholder="Skriv här">
+    <!--<button id="submit-word-btn">Skicka</button>-->
+
+    <div id="turn-arrow"></div>
+    <div id="message" class="speech-bubble"></div>
+
+    <!-- player 1 -->
+    <div id="player1-score"></div>
+    <ul id="player1-words"></ul>
+    <!--
+    <div class="progress-bar stripes" id="progress-player1">
+      <span id="progress-label-player1"></span>
+    </div>
+    -->
+
+    <!-- player 2 -->
+    <div id="player2-score"></div>
+    <ul id="player2-words"></ul>
+    <!--
+    <div class="progress-bar stripes" id="progress-player2">
+      <span id="progress-label-player2"></span>
+    </div>
+    -->
+  </div><!-- end game-container -->
+
+  <div id="version-info">
+    <p>Version: 0.0.5</p>
+  </div><!-- end version-info -->
+
+ <!-- js -->
+ <script src="js/jquery-3.6.0.min.js"></script>
+ <script src="js/sweetalert.min.js"></script>
+ <script src="js/main.js"></script>
+</body>
+</html>
