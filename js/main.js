@@ -137,6 +137,10 @@ $(document).ready(function() {
     if (!/^[a-zA-ZåäöÅÄÖ]+$/.test(word)) {
       $('#message').text('Ange ett giltigt ord'); // Display error message for non-letter characters
       $('#message').fadeIn(400).delay(2000).fadeOut(400);
+      $('#word-input').addClass('shake');
+        setTimeout(function(){
+          $('#word-input').removeClass('shake');
+        },300);
       return false; // Return false if input contains non-letter characters
     }
 
@@ -147,6 +151,10 @@ $(document).ready(function() {
       if (playerWords[1].includes(word) || playerWords[2].includes(word)) {
         $('#message').text('Ordet har redan använts'); // Display error message for previously used words
         $('#message').fadeIn(400).delay(2000).fadeOut(400);
+        $('#word-input').addClass('shake');
+        setTimeout(function(){
+          $('#word-input').removeClass('shake');
+        },300);
         return false; // Return false if the word has already been used
       } else {
         previousWord = word;
