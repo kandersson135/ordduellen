@@ -340,7 +340,7 @@ $(document).ready(function() {
   // How to play button click
   $('#how-to-btn').click(function() {
     //swal("Hur du spelar", "Utmana dina vänner i detta roliga ordspel. Samla poäng genom att skriva in ord som passar i den aktuella kategorin. Den som har mest poäng när tiden är slut vinner spelet!");
-    swal("Hur du spelar", "Ordduellen är den ultimata ordspelsutmaningen där du kan testa dina språkkunskaper mot dina vänner. Samla poäng genom att snabbt och smart komma på ord som passar in i den givna kategorin. Med tiden mot dig är det en kamp mot klockan för att samla så många poäng som möjligt. Spännande och underhållande, Ordduellen är det perfekta spelet för alla ordentusiaster där ute. Är du redo att ta på dig utmaningen och bli mästaren av ord?");
+    swal("Hur du spelar", "Ordduellen är den ultimata ordspelsutmaningen där du kan testa dina språkkunskaper mot dina vänner. Samla poäng genom att snabbt och smart komma på ord som passar in i den givna kategorin. Med tiden mot dig är det en kamp mot klockan för att samla så många poäng som möjligt. \n\n Spännande och underhållande, Ordduellen är det perfekta spelet för alla ordentusiaster där ute. Är du redo att ta på dig utmaningen och bli mästaren av ord?");
   });
 
   // Credits button click
