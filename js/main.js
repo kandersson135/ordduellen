@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var categories = ["Djur", "Mat", "Städer", "Färger", "Sporter", "Fordon", "Länder", "Skådespelare", "Yrken", "Musikinstrument", "Växter", "Klädesplagg", "Film & TV", "Möbler" , "Verktyg", "Spel"];
+  var categories = ["Djur", "Mat", "Städer", "Färger", "Sporter", "Fordon", "Länder", "Yrken", "Musikinstrument", "Trädgård", "Kroppen", "Hemma", "Pokémon", "Klädesplagg", "Film & TV", "Möbler" , "Verktyg", "Spel"];
   var timer;
   var countdownSeconds = 300;
   var success = new Audio('audio/success.mp3');
